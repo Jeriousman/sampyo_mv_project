@@ -1,0 +1,2 @@
+timestamp,image_path,classification_result_type,classification_result_quantity,classification_result_item
+1747700958,/home/sdt/Workspace/onvif/python-onvif-zeep/socket/image_bucket/2025-05-20/20250520-092913.jpg,자갈,정상,발파석

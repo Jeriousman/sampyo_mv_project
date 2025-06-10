@@ -1,0 +1,2 @@
+timestamp,image_path,classification_result_type,classification_result_quantity,classification_result_item
+1747091687,/home/sdt/Workspace/onvif/python-onvif-zeep/socket/image_bucket/2025-05-13/20250513-081441.jpg,모래,정상,발파석

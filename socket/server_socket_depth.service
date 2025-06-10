@@ -1,0 +1,13 @@
+[Unit]
+Description=Socket server for depth camera image collection in order to use for SAM2 granule analysis with depth cam
+After=cam_move.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/sdt/Workspace/onvif/python-onvif-zeep/socket/sam2/server_socket_depth.py
+Restart=on-failure
+WorkingDirectory=/home/sdt/Workspace/onvif/python-onvif-zeep/socket/sam2/
+ExecStop=/bin/kill $MAINPID
+
+[Install]
+WantedBy=multi-user.target

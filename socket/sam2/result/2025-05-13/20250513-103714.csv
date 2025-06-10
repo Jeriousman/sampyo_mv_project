@@ -1,0 +1,2 @@
+timestamp,image_path,classification_result_type,classification_result_quantity,classification_result_item
+1747100234,/home/sdt/Workspace/onvif/python-onvif-zeep/socket/image_bucket/2025-05-13/20250513-103709.jpg,모래,부족,발파석

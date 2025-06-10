@@ -57,3 +57,103 @@ target/
 .venv
 Pipfile
 Pipfile.lock
+
+
+## hojun added
+/depthai_cam/venv/*
+!/depthai_cam/venv/.gitkeep
+
+/hojun/depthai-python/*
+!/hojun/depthai-python/.gitkeep
+
+/hojun/image_test/combined_mask_np/*
+!/hojun/image_test/combined_mask_np/combined_mask_np_2025-02-21 11:36:26.574908.pickle
+
+/hojun/image_test/depth_depth/*
+!/hojun/image_test/depth_depth/depthFrame_1735041275.2188838.jpg
+
+/hojun/image_test/depth_depth_array/*
+!/hojun/image_test/depth_depth_array/depthFrameArray_2025-05-30 09:42:25.224912_31025_B1_1500680000.pickle
+
+
+/hojun/image_test/depth_depth_img/*
+!/hojun/image_test/depth_depth_img/depthImg_2025-06-05 10:32:12.836234.png
+
+/hojun/image_test/depth_disparity/*
+!/hojun/image_test/depth_depth_img/depthImg_2025-06-05 12:57:14.513953.png
+
+/hojun/image_test/depth_mask/*
+!/hojun/image_test/depth_mask/masking_result_20250605-113939.jpg
+
+/hojun/image_test/depth_max/*
+!/hojun/image_test/depth_max/depth_max_2025-06-05 14:54:57.062644.png
+
+
+/hojun/image_test/depth_rgb/*
+!/hojun/image_test/depth_rgb/rgbFrame_2025-06-05 14:14:56.916246_32001_B1_1500680000.jpg
+
+
+/hojun/image_test/granule_test/*
+
+
+/hojun/image_test/interested_area
+!/hojun/image_test/interested_area/interested_area_2025-06-05 12:10:24.525857.pickle
+
+/hojun/image_test/mv_rgb
+!/hojun/image_test/mv_rgb/rgb_frame_2025-06-05 14:47:35.018926_202506050085.jpg
+
+/hojun/image_test/sam_img
+!/hojun/image_test/sam_img/2025-06-05 12:11:12.304190_sampyo_sam.jpg
+
+/hojun/image_test/mv_rgb.zip
+/hojun/examples.zip
+/hojun/files.zip
+/hojun/flattened_granule_num_px_list.pkl
+
+/seg_model/detectron2
+!/seg_model/detectron2/.gitkeep
+
+/seg_model/MaskDINO
+!/seg_model/MaskDINO/.gitkeep
+
+/socket/.venvs
+
+/socket/arena_python_pkg
+!/socket/arena_python_pkg/.gitkeep
+
+/socket/ArenaSDK_Linux_x64
+!/socket/ArenaSDK_Linux_x64/.gitkeep
+
+/socket/cudnn-linux-x86_64-8.9.7.29_cuda12-archive
+
+/socket/granule_analysis
+
+/socket/image_bucket
+/socket/logs
+/socket/MaskDINO
+/socket/quantity_analysis
+/socket/references
+/socket/result
+/socket/test
+/socket/weights
+!/socket/weights/.gitkeep
+/socket/arena_api-2.5.9-py3-none-any.whl
+/socket/arena_api-2.5.9-py3-none-any.zip
+/socket/ArenaSDK_v0.1.91_Linux_x64.tar.gz
+/socket/cuda-repo-ubuntu2004-12-4-local_12.4.1-550.54.15-1_amd64.deb
+/socket/cudnn-linux-x86_64-8.9.7.29_cuda12-archive.tar.xz
+/socket/Lucid_Broadcom_Driver_Package_v226.tar.gz
+/socket/offline_installation_dependencies.zip
+/socket/weights.zip
+/tests
+/socket_server.zip
+/seg_model.zip
+/depthai_cam
+/hojun/depthai-python
+/hojun/files.zip
+/depthai_cam/venv
+*/__pycache__/*
+__pycache__
+*.pyc
+*/__MACOSX/*
+__MACOSX

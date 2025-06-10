@@ -1,0 +1,2 @@
+timestamp,image_path,classification_result_type,classification_result_quantity,classification_result_item
+1749100500,/home/sdt/Workspace/onvif/python-onvif-zeep/socket/image_bucket/2025-06-05/20250605-141455.jpg,모래,부족,석산

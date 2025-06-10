@@ -1,3 +1,6 @@
 [submodule "depthai_cam/depthai-python"]
 	path = depthai_cam/depthai-python
 	url = https://github.com/luxonis/depthai-python.git
+[submodule "hojun/python-onvif-zeep"]
+	path = hojun/python-onvif-zeep
+	url = https://github.com/FalkTannhaeuser/python-onvif-zeep.git

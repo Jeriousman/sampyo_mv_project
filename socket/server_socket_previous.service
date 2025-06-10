@@ -1,0 +1,14 @@
+[Unit]
+Description=Socket server for snapshot 
+After=cam_move.service
+
+[Service]
+Type=simple
+PIDFILE=/home/sdt/Workspace/onvif/python-onvif-zeep/socket/server_socket.pid
+ExecStart=/usr/bin/python3 /home/sdt/Workspace/onvif/python-onvif-zeep/socket/server_socket.py
+Restart=on-failure
+WorkingDirectory=/home/sdt/Workspace/onvif/python-onvif-zeep/socket/
+ExecStop=/bin/kill $MAINPID
+
+[Install]
+WantedBy=multi-user.target
