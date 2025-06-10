@@ -66,27 +66,30 @@ Pipfile.lock
 /hojun/depthai-python/*
 !/hojun/depthai-python/.gitkeep
 
-/hojun/image_test/combined_mask_np/*
 !/hojun/image_test/combined_mask_np/combined_mask_np_2025-02-21 11:36:26.574908.pickle
+/hojun/image_test/combined_mask_np/*
 
-/hojun/image_test/depth_depth/*
+
 !/hojun/image_test/depth_depth/depthFrame_1735041275.2188838.jpg
+/hojun/image_test/depth_depth/*
 
-/hojun/image_test/depth_depth_array/*
+
 !/hojun/image_test/depth_depth_array/depthFrameArray_2025-05-30 09:42:25.224912_31025_B1_1500680000.pickle
+/hojun/image_test/depth_depth_array/*
 
 
-/hojun/image_test/depth_depth_img/*
 !/hojun/image_test/depth_depth_img/depthImg_2025-06-05 10:32:12.836234.png
+/hojun/image_test/depth_depth_img/*
 
-/hojun/image_test/depth_disparity/*
 !/hojun/image_test/depth_depth_img/depthImg_2025-06-05 12:57:14.513953.png
+/hojun/image_test/depth_disparity/*
 
-/hojun/image_test/depth_mask/*
 !/hojun/image_test/depth_mask/masking_result_20250605-113939.jpg
+/hojun/image_test/depth_mask/*
 
-/hojun/image_test/depth_max/*
 !/hojun/image_test/depth_max/depth_max_2025-06-05 14:54:57.062644.png
+/hojun/image_test/depth_max/*
+
 
 
 /hojun/image_test/depth_rgb/*
@@ -95,15 +98,15 @@ Pipfile.lock
 
 /hojun/image_test/granule_test/*
 
-
-/hojun/image_test/interested_area
 !/hojun/image_test/interested_area/interested_area_2025-06-05 12:10:24.525857.pickle
+/hojun/image_test/interested_area/*
 
-/hojun/image_test/mv_rgb
 !/hojun/image_test/mv_rgb/rgb_frame_2025-06-05 14:47:35.018926_202506050085.jpg
+/hojun/image_test/mv_rgb/*
 
-/hojun/image_test/sam_img
 !/hojun/image_test/sam_img/2025-06-05 12:11:12.304190_sampyo_sam.jpg
+/hojun/image_test/sam_img/*
+
 
 /hojun/image_test/mv_rgb.zip
 /hojun/examples.zip
