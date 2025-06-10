@@ -1,0 +1,15 @@
+{
+	"sampyo_host": "172.17.16.14",
+	"sampyo_dbname": "NEW_RC_IMAGE",
+	"sampyo_username": "sdt",
+	"sampyo_password": "sdt",
+	"sdt_host": "localhost",
+	"sdt_dbname": "sampyo_classification",
+	"sdt_username": "sa",
+	"sdt_password": "sampyo123!",
+	"ms_driver": "ODBC Driver 17 for SQL Server",
+	"my_host": "localhost",
+	"my_dbname": "sampyo_classification",
+	"my_username": "root",
+	"my_password": "sampyo123!"
+}
