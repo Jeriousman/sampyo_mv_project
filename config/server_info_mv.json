@@ -1,0 +1,19 @@
+{
+	"model": {"seed": 0,
+		  "name": "vit_base_patch32_384",
+		  "num_classes": 6,
+		  "num_classes_qc": 2,
+		  "num_classes_item": 4,
+		  "device": "cuda:0",
+	          "ckpt_path": "./weights/vit_base_patch32_384_type.pth",
+		  "ckpt_path_qc": "./weights/vit_base_patch32_384_quantity.pth",
+		  "ckpt_path_item": "./weights/vit_base_patch32_384_item.pth"},
+	"image_bucket": "./image_bucket",
+	"server_host": "172.17.16.5",
+	"server_port": 7700,
+	"cam_ip": "192.168.200.3",
+	"cam_port": 80,
+	"cam_id": "admin",
+	"cam_pw": "sampyo123!"
+}
+
