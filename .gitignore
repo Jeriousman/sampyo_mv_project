@@ -39,9 +39,10 @@ server_socket.service
 socket_restart.sh
 weights.zip
 
-python-onvif-zeep
-!python-onvif-zeep/cam_move
-!python-onvif-zeep/depthai_cam
+
+python-onvif-zeep/*
+!/python-onvif-zeep/cam_move
+!/python-onvif-zeep/depthai_cam
 
 
 
