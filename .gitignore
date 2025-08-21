@@ -39,23 +39,10 @@ server_socket.service
 socket_restart.sh
 weights.zip
 
+python-onvif-zeep
+!python-onvif-zeep/cam_move
+!python-onvif-zeep/depthai_cam
 
-
-python-onvif-zeep/socket
-python-onvif-zeep/.vscode/
-python-onvif-zeep/build/
-python-onvif-zeep/depthai_cam/
-python-onvif-zeep/dist/
-python-onvif-zeep/zzzz.jpg
-python-onvif-zeep/seg_model.zip
-python-onvif-zeep/.gitignore___aa
-python-onvif-zeep/.gitmodules
-python-onvif-zeep/CHANGES.txt
-python-onvif-zeep/gitmoosi
-python-onvif-zeep/LICENSE
-python-onvif-zeep/MANIFEST.in
-python-onvif-zeep/persist.json
-python-onvif-zeep/README.rst
 
 
 # Node artifact files
