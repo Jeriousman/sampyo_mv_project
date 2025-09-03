@@ -1,0 +1,11 @@
+[Unit]
+Description=Camera initial settings
+
+[Service]
+Type=oneshot
+ExecStart=/home/sdt/Workspace/onvif/python-onvif-zeep/cam_move/cam_move.sh
+Restart=on-failure
+WorkingDirectory=/home/sdt/Workspace/onvif/python-onvif-zeep/cam_move/
+
+[Install]
+WantedBy=multi-user.target

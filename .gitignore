@@ -47,11 +47,31 @@ python-onvif-zeep/*
 !/python-onvif-zeep/depthai_cam
 
 
-python-onvif-zeep/socket/*
+!python-onvif-zeep/socket
+python-onvif-zeep/socket/docs
+python-onvif-zeep/socket/examples
+python-onvif-zeep/socket/granule_analysis
+python-onvif-zeep/socket/image_bucket
+python-onvif-zeep/socket/image_bucket
+python-onvif-zeep/socket/MaskDINO
+python-onvif-zeep/socket/quantity_analysis
+python-onvif-zeep/socket/result
+python-onvif-zeep/socket/sam2
+python-onvif-zeep/socket/socket
+python-onvif-zeep/socket/toinstall
+python-onvif-zeep/socket/weights
+python-onvif-zeep/socket/LICENSE.txt
+python-onvif-zeep/socket/persist.json
+python-onvif-zeep/socket/pyproject.toml
+python-onvif-zeep/socket/setup.py
+python-onvif-zeep/socket/weights.zip
+
 !python-onvif-zeep/socket/config
 !python-onvif-zeep/socket/references
 !python-onvif-zeep/socket/sampyo_project_code
 !python-onvif-zeep/socket/test
+!python-onvif-zeep/socket/utils
+
 
 
 # Node artifact files
