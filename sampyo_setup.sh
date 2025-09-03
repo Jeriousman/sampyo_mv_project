@@ -2,6 +2,32 @@
 
 source hojun_venv/bin/activate
 
+mkdir /home/sdt/
+mkdir /home/sdt/Workspace/
+
+git clone git@bitbucket.org:sdt_inc/sampyo-hwaseong.git
+mv sampyo-hwaseong onvif
+cd onvif
+git checkout dev2
+
+
+mkdir /home/sdt/Workspace/onvif/image_bucket
+mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun
+mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test
+mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/socket/sam2/logs
+mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/socket/sam2/result
+mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test/between_25_40_img
+mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test/combined_mask_np
+mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test/depth_depth_array
+mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test/depth_depth_img
+mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test/depth_mask
+mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test/depth_max
+mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test/depth_rgb
+mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test/interested_area
+mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test/mv_rgb
+mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test/sam_img
+
+
 
 pip install torch==2.5.1 
 pip install torchvision==0.20.1 
@@ -30,10 +56,7 @@ source ~/.bashrc
 python3 -m pip install depthai
 
 
-git clone git@bitbucket.org:sdt_inc/sampyo-hwaseong.git
-mv sampyo-hwaseong onvif
-cd onvif
-git checkout dev2
+
 
 mv /home/sdt/Workspace/onvif/python-onvif-zeep /home/sdt/Workspace/onvif/python-onvif-zeep_
 git clone https://github.com/FalkTannhaeuser/python-onvif-zeep
@@ -82,6 +105,7 @@ cd checkpoints
 ./download_ckpts.sh
 mv /home/sdt/Workspace/onvif/python-onvif-zeep/socket/sam2_/* /home/sdt/Workspace/onvif/python-onvif-zeep/socket/sam2/
 rm -rf /home/sdt/Workspace/onvif/python-onvif-zeep/socket/sam2_
+
 cd ../..
 
 pip install blobconverter
@@ -93,16 +117,3 @@ pip install timm
 pip install pandas
 
 
-
-mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/socket/sam2/result
-mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test/between_25_40_img
-mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test/combined_mask_np
-mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test/depth_depth_array
-mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test/depth_depth_img
-mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test/depth_mask
-mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test/depth_max
-mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test/depth_rgb
-mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test/interested_area
-mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test/mv_rgb
-mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test/sam_img
-mkdir /home/sdt/Workspace/onvif/image_bucket
