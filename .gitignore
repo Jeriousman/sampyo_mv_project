@@ -5,11 +5,18 @@
 
 
 .venvs/
+__pycache__/
+__MACOSX/
+
+.cache/
+.github/
 arena_python_pkg/
 ArenaSDK_Linux_x64/
-/backup/
 cudnn-linux-x86_64-8.9.7.29_cuda12-archive/
 granule_analysis/
+
+
+/backup/
 /hojun_venv/
 /image_bucket/
 /install_test/
@@ -35,12 +42,11 @@ Lucid_Broadcom_Driver_Package_v226.tar.gz
 offline_installation_dependencies.zip
 python-onvif-zeep.zip
 README
-server_socket.service
+/server_socket.service
 socket_restart.sh
 weights.zip
 
-__pycache__/
-__MACOSX/
+
 
 python-onvif-zeep/*
 !/python-onvif-zeep/cam_move
@@ -56,7 +62,7 @@ python-onvif-zeep/socket/image_bucket
 python-onvif-zeep/socket/MaskDINO
 python-onvif-zeep/socket/quantity_analysis
 python-onvif-zeep/socket/result
-python-onvif-zeep/socket/sam2
+
 python-onvif-zeep/socket/socket
 python-onvif-zeep/socket/toinstall
 python-onvif-zeep/socket/weights
@@ -72,6 +78,34 @@ python-onvif-zeep/socket/weights.zip
 !python-onvif-zeep/socket/test
 !python-onvif-zeep/socket/utils
 
+!python-onvif-zeep/socket/sam2
+python-onvif-zeep/socket/sam2/assets
+python-onvif-zeep/socket/sam2/checkpoints
+python-onvif-zeep/socket/sam2/demo
+python-onvif-zeep/socket/sam2/image_bucket
+python-onvif-zeep/socket/sam2/maskdino
+python-onvif-zeep/socket/sam2/mv_rgb
+python-onvif-zeep/socket/sam2/result
+python-onvif-zeep/socket/sam2/SAM_2.egg-info
+python-onvif-zeep/socket/sam2/sam2
+python-onvif-zeep/socket/sam2/sav_dataset
+python-onvif-zeep/socket/sam2/tools
+python-onvif-zeep/socket/sam2/training
+python-onvif-zeep/socket/sam2/notebooks
+python-onvif-zeep/socket/sam2/.clang-format
+python-onvif-zeep/socket/sam2/.watchmanconfig
+python-onvif-zeep/socket/sam2/backend.Dockerfile
+python-onvif-zeep/socket/sam2/CODE_OF_CONDUCT.md
+python-onvif-zeep/socket/sam2/CONTRIBUTING.md
+python-onvif-zeep/socket/sam2/docker-compose.yaml
+python-onvif-zeep/socket/sam2/INSTALL.md
+python-onvif-zeep/socket/sam2/LICENSE
+python-onvif-zeep/socket/sam2/LICENSE_cctorch
+python-onvif-zeep/socket/sam2/MANIFEST.in
+python-onvif-zeep/socket/sam2/persist.json
+python-onvif-zeep/socket/sam2/pyproject.toml
+python-onvif-zeep/socket/sam2/RELEASE_NOTES.md
+python-onvif-zeep/socket/sam2/setup.py
 
 
 # Node artifact files
