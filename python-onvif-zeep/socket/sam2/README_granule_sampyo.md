@@ -1,0 +1,1 @@
+python /home/sdt/Workspace/onvif/python-onvif-zeep/socket/sam2/sam2.1_inference.py
