@@ -3,7 +3,12 @@
 source hojun_venv/bin/activate
 
 
+pip install torch==2.5.1 
+pip install torchvision==0.20.1 
+pip install torchaudio==2.5.1
 
+
+### Installing Lucid Arena
 tar -xvzf ArenaSDK_v0.1.91_Linux_x64.tar.gz -C .
 cd ArenaSDK_Linux_x64
 sudo sh Arena_SDK_Linux_x64.conf
@@ -17,15 +22,30 @@ pip install numpy==1.26.4
 pip install opencv-python==4.10.0.84
 
 
-pip install torch==2.5.1 
-pip install torchvision==0.20.1 
-pip install torchaudio==2.5.1
+
+### Installing Luxonis DepthAI
+sudo wget -qO- https://docs.luxonis.com/install_dependencies.sh | bash
+echo "export OPENBLAS_CORETYPE=ARMV8" >> ~/.bashrc
+source ~/.bashrc
+python3 -m pip install depthai
 
 
+git clone git@bitbucket.org:sdt_inc/sampyo-hwaseong.git
+mv sampyo-hwaseong onvif
+cd onvif
+git checkout dev2
+
+mv /home/sdt/Workspace/onvif/python-onvif-zeep /home/sdt/Workspace/onvif/python-onvif-zeep_
 git clone https://github.com/FalkTannhaeuser/python-onvif-zeep
 pip install zeep
 cd python-onvif-zeep 
 python3 setup.py install
+mv /home/sdt/Workspace/onvif/python-onvif-zeep_/* /home/sdt/Workspace/onvif/python-onvif-zeep/
+
+
+
+
+
 mkdir -p /home/sdt/Workspace/onvif/python-onvif-zeep/socket/weights
 cd /home/sdt/Workspace/onvif/python-onvif-zeep/socket/weights
 pip install gdown
@@ -50,14 +70,15 @@ cd /home/sdt/Workspace/onvif/python-onvif-zeep/socket/MaskDINO/demo/
 gdown https://drive.google.com/uc?id=17lbV4jHBSrKc5Qgg179_3898uGCsThlj
 
 
-cd ../../../../..
+cd /home/sdt/Workspace/onvif/python-onvif-zeep/socket
+mv /home/sdt/Workspace/onvif/python-onvif-zeep/socket/sam2 /home/sdt/Workspace/onvif/python-onvif-zeep/socket/sam2_
 git clone https://github.com/facebookresearch/sam2.git && cd sam2
 pip install -e .
 cd checkpoints
 ./download_ckpts.sh
+mv /home/sdt/Workspace/onvif/python-onvif-zeep/socket/sam2_/* /home/sdt/Workspace/onvif/python-onvif-zeep/socket/sam2/
 cd ../..
 
-pip install depthai
 pip install blobconverter
 pip install pyodbc
 pip install requests
@@ -68,3 +89,15 @@ pip install pandas
 
 
 
+mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/socket/sam2/result
+mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test/between_25_40_img
+mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test/combined_mask_np
+mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test/depth_depth_array
+mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test/depth_depth_img
+mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test/depth_mask
+mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test/depth_max
+mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test/depth_rgb
+mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test/interested_area
+mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test/mv_rgb
+mkdir /home/sdt/Workspace/onvif/python-onvif-zeep/hojun/image_test/sam_img
+mkdir /home/sdt/Workspace/onvif/image_bucket
