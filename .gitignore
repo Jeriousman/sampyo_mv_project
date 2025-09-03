@@ -7,27 +7,27 @@
 .venvs/
 arena_python_pkg/
 ArenaSDK_Linux_x64/
-backup/
+/backup/
 cudnn-linux-x86_64-8.9.7.29_cuda12-archive/
 granule_analysis/
-hojun_venv/
-image_bucket/
-install_test/
+/hojun_venv/
+/image_bucket/
+/install_test/
 !install_test/sampyo_deploy.sh
 !install_test/sampyo_setup_and_deploy_test.sh
 !install_test/sampyo_setup_and_deploy.sh
 !install_test/sampyo_setup.sh
 install_testtest/
-logs/
-MaskDINO/
-quantity_analysis/
-references/
-result/
-sam2/
-seg_model/
-test/
-utils/
-weights/
+/logs/
+/MaskDINO/
+/quantity_analysis/
+/references/
+/result/
+/sam2/
+/seg_model/
+/test/
+/utils/
+/weights/
 arena_api-2.5.9-py3-none-any.whl
 cuda-repo-ubuntu2004-12-4-local_12.4.1-550.54.15-1_amd64.deb
 cudnn-linux-x86_64-8.9.7.29_cuda12-archive.tar.xz
@@ -39,11 +39,19 @@ server_socket.service
 socket_restart.sh
 weights.zip
 
+__pycache__/
+__MACOSX/
 
 python-onvif-zeep/*
 !/python-onvif-zeep/cam_move
 !/python-onvif-zeep/depthai_cam
 
+
+python-onvif-zeep/socket/*
+!python-onvif-zeep/socket/config
+!python-onvif-zeep/socket/references
+!python-onvif-zeep/socket/sampyo_project_code
+!python-onvif-zeep/socket/test
 
 
 # Node artifact files
