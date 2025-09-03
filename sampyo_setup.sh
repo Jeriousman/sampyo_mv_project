@@ -41,7 +41,7 @@ pip install zeep
 cd python-onvif-zeep 
 python3 setup.py install
 mv /home/sdt/Workspace/onvif/python-onvif-zeep_/* /home/sdt/Workspace/onvif/python-onvif-zeep/
-
+rm -rf /home/sdt/Workspace/onvif/python-onvif-zeep_
 
 
 
@@ -58,6 +58,7 @@ cd detectron2
 pip install -e .
 pip install git+https://github.com/cocodataset/panopticapi.git
 pip install git+https://github.com/mcordts/cityscapesScripts.git
+cp -f /home/sdt/Workspace/onvif/change_lib_files/defaults.py /home/sdt/Workspace/onvif/python-onvif-zeep/socket/detectron2/detectron2/engine/defaults.py
 
 pip install fvcore
 cd /home/sdt/Workspace/onvif/python-onvif-zeep/socket
@@ -69,6 +70,9 @@ sh make.sh
 cd /home/sdt/Workspace/onvif/python-onvif-zeep/socket/MaskDINO/demo/
 gdown https://drive.google.com/uc?id=17lbV4jHBSrKc5Qgg179_3898uGCsThlj
 
+cp -f /home/sdt/Workspace/onvif/change_lib_files/Base-COCO-InstanceSegmentation.yaml /home/sdt/Workspace/onvif/python-onvif-zeep/socket/MaskDINO/configs/coco/instance-segmentation/
+cp -f /home/sdt/Workspace/onvif/change_lib_files/maskdino_R50_bs16_50ep_3s.yaml /home/sdt/Workspace/onvif/python-onvif-zeep/socket/MaskDINO/configs/coco/instance-segmentation/
+
 
 cd /home/sdt/Workspace/onvif/python-onvif-zeep/socket
 mv /home/sdt/Workspace/onvif/python-onvif-zeep/socket/sam2 /home/sdt/Workspace/onvif/python-onvif-zeep/socket/sam2_
@@ -77,6 +81,7 @@ pip install -e .
 cd checkpoints
 ./download_ckpts.sh
 mv /home/sdt/Workspace/onvif/python-onvif-zeep/socket/sam2_/* /home/sdt/Workspace/onvif/python-onvif-zeep/socket/sam2/
+rm -rf /home/sdt/Workspace/onvif/python-onvif-zeep/socket/sam2_
 cd ../..
 
 pip install blobconverter
