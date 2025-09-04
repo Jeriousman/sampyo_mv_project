@@ -8,7 +8,6 @@ mkdir /home/sdt/Workspace/
 git clone git@bitbucket.org:sdt_inc/sampyo-hwaseong.git
 mv sampyo-hwaseong onvif
 cd onvif
-git checkout dev2
 
 
 mkdir /home/sdt/Workspace/onvif/image_bucket
